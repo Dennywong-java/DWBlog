@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11747ffa-f008-4ae7-ae73-760943f67380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/DWBlogApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +56,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.TemplateSettingForm"
+    "settings.editor.selected.configurable": "com.sjhy.plugin.ui.TemplateSettingForm",
+    "spring.configuration.checksum": "38bb21d8a2d15468bed42432738e6468"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -74,6 +65,14 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dwblog.domain" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668485808221</updated>
       <workItem from="1668485809656" duration="1870000" />
+      <workItem from="1668528676155" duration="2747000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,6 @@
 package com.dwblog.controller;
 
+import com.dwblog.domain.ResponseResult;
 import com.dwblog.domain.entity.Article;
 import com.dwblog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,16 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
-    @GetMapping("/list")
-    public List<Article> test(){
-        return articleService.list();
+//    @GetMapping("/list")
+//    public List<Article> test(){
+//        return articleService.list();
+//    }
+
+    @GetMapping("/hotArticleList")
+    public ResponseResult hotArticleList(){
+        //查询热门文章 封装成ResponseResult返回
+        ResponseResult result = articleService.hotArticleList();
+        return result;
     }
+
 }
