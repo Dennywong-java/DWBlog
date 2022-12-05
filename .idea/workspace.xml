@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11747ffa-f008-4ae7-ae73-760943f67380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/HotArticleVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/BeanCopyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/497810da-03ec-481c-bedf-fec5c872e010.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/497810da-03ec-481c-bedf-fec5c872e010.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/ArticleListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/CategoryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/PageVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/DWBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/DWBlogApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +65,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.sjhy.plugin.ui.TemplateSettingForm",
+    "settings.editor.splitter.proportion": "0.23343527",
     "spring.configuration.checksum": "38bb21d8a2d15468bed42432738e6468"
   },
   "keyToStringList": {
@@ -76,11 +85,14 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dwblog.domain.vo" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.dwblog.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.sg_category.sql">
+  <component name="RunManager" selected="Spring Boot.DWBlogApplication">
     <configuration name="sg_category.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/../../SGBlog/SGBlog/资源/SQL/sg_category.sql" />
       <script-mode>FILE</script-mode>
@@ -102,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.sg_category.sql" />
         <item itemvalue="Spring Boot.DWBlogApplication" />
+        <item itemvalue="Database Script.sg_category.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +131,8 @@
       <workItem from="1668528676155" duration="2747000" />
       <workItem from="1668622724993" duration="6164000" />
       <workItem from="1668636344444" duration="1628000" />
-      <workItem from="1668719985867" duration="5711000" />
+      <workItem from="1668719985867" duration="5736000" />
+      <workItem from="1670258688466" duration="7644000" />
     </task>
     <servers />
   </component>

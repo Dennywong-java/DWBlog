@@ -18,4 +18,9 @@ public class SystemConstants
      *  PageHelper current page size
      */
     public static final int PAGE_SIZE= 10;
+    /**
+     *  Category Normal Status
+     */
+    public static final String CATEGORY_STATUS_NORMAL = "0";
+
 }
