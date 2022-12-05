@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11747ffa-f008-4ae7-ae73-760943f67380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/ArticleListVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/CategoryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/PageVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/WebConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +118,7 @@
       <workItem from="1668622724993" duration="6164000" />
       <workItem from="1668636344444" duration="1628000" />
       <workItem from="1668719985867" duration="5736000" />
-      <workItem from="1670258688466" duration="7644000" />
+      <workItem from="1670258688466" duration="8898000" />
     </task>
     <servers />
   </component>
