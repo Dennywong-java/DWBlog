@@ -7,6 +7,7 @@ import com.dwblog.constants.SystemConstants;
 import com.dwblog.domain.ResponseResult;
 import com.dwblog.domain.entity.Article;
 import com.dwblog.domain.entity.Category;
+import com.dwblog.domain.vo.ArticleDetailVo;
 import com.dwblog.domain.vo.HotArticleVo;
 import com.dwblog.domain.vo.ArticleListVo;
 import com.dwblog.domain.vo.PageVo;
@@ -93,5 +94,21 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 
         PageVo pageVo = new PageVo(articleListVos,page.getTotal());
         return ResponseResult.okResult(pageVo);
+    }
+
+    @Override
+    public ResponseResult getArticleDetail(Long id) {
+        // get Article according to the ID
+        Article article = getById(id);
+        // encapsulated VO
+        ArticleDetailVo articleDetailVo = BeanCopyUtils.copyBean(article, ArticleDetailVo.class);
+        // 根据分类id查询分类名
+        Long categoryId = articleDetailVo.getCategoryId();
+        Category byId = categoryService.getById(categoryId);
+        if(byId != null){
+            articleDetailVo.setCategoryName(byId.getName());
+        }
+        // 封装响应返回
+        return ResponseResult.okResult(articleDetailVo);
     }
 }
