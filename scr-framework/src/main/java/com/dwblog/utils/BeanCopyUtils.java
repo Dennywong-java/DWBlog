@@ -12,6 +12,12 @@ public class BeanCopyUtils {
     private BeanCopyUtils(){
     }
 
+    /**
+     * Copy properties from source to target
+     * 第一个v的意思是这是泛型方法
+     * 第二个v是返回值是V类型的
+     * @return target object
+     */
     public static <V> V copyBean(Object source, Class<V> clazz) {
         V result = null;
         try {
