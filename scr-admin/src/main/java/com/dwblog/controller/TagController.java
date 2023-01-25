@@ -1,24 +1,20 @@
 package com.dwblog.controller;
 
 import com.dwblog.domain.ResponseResult;
-import com.dwblog.service.LinkService;
-import io.swagger.annotations.Api;
+import com.dwblog.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
-@RequestMapping("/link")
-@Api(value = "友情链接", tags = "友情链接相关接口")
-public class LinkController {
-
+@RequestMapping("/content/tag")
+public class TagController {
     @Autowired
-    private LinkService linkService;
+    private TagService tagService;
 
-    @GetMapping("/getAllLink")
-    public ResponseResult getAllLink(){
-        return linkService.getAllLink();
+    @GetMapping("/list")
+    public ResponseResult list(){
+        return ResponseResult.okResult(tagService.list());
     }
 }

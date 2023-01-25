@@ -5,36 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11747ffa-f008-4ae7-ae73-760943f67380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/BlogLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/BlogUserLoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/exception/SystemException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/handler/security/AccessDeniedHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/handler/security/AuthenticationEntryPointImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/BlogLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/BlogLoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-admin/src/main/java/com/dwblog/BlogAdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-admin/src/main/java/com/dwblog/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-admin/src/main/java/com/dwblog/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-admin/src/main/java/com/dwblog/controller/TagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-admin/src/main/java/com/dwblog/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-admin/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/job/UpdateViewCountJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/runner/ViewCountRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-blog/src/test/java/com/dwblog/OSSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/annotation/SystemLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/vo/CommentVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/handler/mybatisplus/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/mapper/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/mapper/TagMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/UploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/OssUploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/TagServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/PathUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/SecurityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/DWBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/DWBlogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/BlogLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/BlogLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/java/com/dwblog/controller/LinkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/scr-blog/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/domain/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/BeanCopyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/BeanCopyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/scr-framework/src/main/java/com/dwblog/utils/RedisCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +92,7 @@
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "D:/github/DWBlog/scr-framework/src/main/java/com/dwblog/utils",
+    "last_opened_file_path": "D:/github/DWBlog/scr-admin/src/main/java/com/dwblog",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,6 +122,7 @@
       <recent name="com.dwblog.domain.vo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\DWBlog\scr-admin\src\main\java\com\dwblog" />
       <recent name="D:\github\DWBlog\scr-framework\src\main\java\com\dwblog\utils" />
       <recent name="D:\github\DWBlog\scr-framework\src\main\java\com\dwblog\config" />
     </key>
@@ -112,7 +130,14 @@
       <recent name="com.dwblog.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DWBlogApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogAdminApplication">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dwblog.controller.test" />
       <module name="scr-blog" />
@@ -126,17 +151,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sg_category.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/../../SGBlog/SGBlog/资源/SQL/sg_category.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="497810da-03ec-481c-bedf-fec5c872e010" namespace="schema/&quot;sg_blog&quot;" />
-      <method v="2" />
+    <configuration name="OSSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scr-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwblog" />
+      <option name="MAIN_CLASS_NAME" value="com.dwblog.OSSTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="sg_link.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/../../SGBlog/SGBlog/资源/SQL/sg_link.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="497810da-03ec-481c-bedf-fec5c872e010" namespace="schema/&quot;sg_blog&quot;" />
-      <method v="2" />
+    <configuration name="OSSTest.testOss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scr-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwblog" />
+      <option name="MAIN_CLASS_NAME" value="com.dwblog.OSSTest" />
+      <option name="METHOD_NAME" value="testOss" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="scr-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dwblog.BlogAdminApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DWBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="scr-blog" />
@@ -153,10 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BlogAdminApplication" />
         <item itemvalue="Spring Boot.DWBlogApplication" />
+        <item itemvalue="JUnit.OSSTest.testOss" />
+        <item itemvalue="JUnit.OSSTest" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Database Script.sg_link.sql" />
-        <item itemvalue="Database Script.sg_category.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +249,7 @@
       <workItem from="1671643298762" duration="73000" />
       <workItem from="1674579243207" duration="139000" />
       <workItem from="1674583045268" duration="18425000" />
+      <workItem from="1674659779228" duration="19533000" />
     </task>
     <servers />
   </component>

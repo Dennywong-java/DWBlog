@@ -22,5 +22,9 @@ public class SystemConstants
      *  Category Normal Status
      */
     public static final String CATEGORY_STATUS_NORMAL = "0";
+    /**
+     *  Comment Root Id
+     */
+    public static final int COMMENT_ROOT_ID = -1;
 
 }
