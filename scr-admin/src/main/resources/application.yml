@@ -10,7 +10,18 @@ spring:
     multipart:
       max-file-size: 2MB
       max-request-size: 5MB
-
+  redis:
+    database: 0
+    host: 34.228.73.79
+    port: 6379
+    password: 3669450H
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
 mybatis-plus:
   configuration:
     # 日志
@@ -21,4 +32,7 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
-
+oss:
+  accessKey: MEQcJaiSogtSqdVkV8VlB-e6H2DQwT_qsB5xrDbk
+  secretKey: EMlPEupwst5MsaTwFp25cz-6VLVDD5Ix5Zrv6Tr1
+  bucket: dw0922-blog

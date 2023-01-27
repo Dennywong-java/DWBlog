@@ -1,8 +1,11 @@
 package com.dwblog.controller;
 
+import com.dwblog.constants.SystemConstants;
 import com.dwblog.domain.ResponseResult;
+import com.dwblog.domain.dto.AddCommentDto;
 import com.dwblog.domain.entity.Comment;
 import com.dwblog.service.CommentService;
+import com.dwblog.utils.BeanCopyUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -12,24 +15,32 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/comment")
-@Api(tags = "评论管理", description = "评论管理相关接口")
+@Api(tags = "评论",description = "评论相关接口")
 public class CommentController {
+
     @Autowired
     private CommentService commentService;
 
     @GetMapping("/commentList")
-    @ApiOperation(value = "评论列表", notes = "获取评论列表")
-    @ApiImplicitParams(value = {
-            @ApiImplicitParam(name = "articleId", value = "文章id"),
-            @ApiImplicitParam(name = "pageNum", value = "页码"),
-            @ApiImplicitParam(name = "pageSize", value = "每页条数")
-    })
-    public ResponseResult commentList(Long articleId, Integer pageNum, Integer pageSize){
-        return commentService.commentList(articleId, pageNum, pageSize);
+    public ResponseResult commentList(Long articleId,Integer pageNum,Integer pageSize){
+        return commentService.commentList(SystemConstants.ARTICLE_COMMENT,articleId,pageNum,pageSize);
     }
 
     @PostMapping
-    public ResponseResult addComment(@RequestBody Comment comment){
+    public ResponseResult addComment(@RequestBody AddCommentDto addCommentDto){
+        Comment comment = BeanCopyUtils.copyBean(addCommentDto, Comment.class);
         return commentService.addComment(comment);
+    }
+
+
+    @GetMapping("/linkCommentList")
+    @ApiOperation(value = "友链评论列表",notes = "获取一页友链评论")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "pageNum",value = "页号"),
+            @ApiImplicitParam(name = "pageSize",value = "每页大小")
+    }
+    )
+    public ResponseResult linkCommentList(Integer pageNum,Integer pageSize){
+        return commentService.commentList(SystemConstants.LINK_COMMENT,null,pageNum,pageSize);
     }
 }

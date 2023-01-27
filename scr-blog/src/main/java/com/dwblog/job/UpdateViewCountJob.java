@@ -1,5 +1,6 @@
 package com.dwblog.job;
 
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.dwblog.domain.entity.Article;
 import com.dwblog.service.ArticleService;
 import com.dwblog.utils.RedisCache;
@@ -13,20 +14,30 @@ import java.util.stream.Collectors;
 
 @Component
 public class UpdateViewCountJob {
+
     @Autowired
-    RedisCache redisCache;
+    private RedisCache redisCache;
+
     @Autowired
-    ArticleService  articleService;
-    @Scheduled(cron = "0/5 * * * * ?")
+    private ArticleService articleService;
+
+    @Scheduled(cron = "* 0/10 * * * ?")
     public void updateViewCount(){
-        // 从redis中获取浏览量
+        //获取redis中的浏览量
         Map<String, Integer> viewCountMap = redisCache.getCacheMap("article:viewCount");
 
-        List<Article> articleList = viewCountMap.entrySet()
+        List<Article> articles = viewCountMap.entrySet()
                 .stream()
-                .map(entry -> new Article(Long.valueOf(entry.getKey()), entry.getValue().longValue()))
+                .map(entry ->
+                        new Article(Long.valueOf(entry.getKey()), entry.getValue().longValue()))
                 .collect(Collectors.toList());
-        // 更新数据库
-        articleService.updateBatchById(articleList);
+        //更新到数据库中
+        for (Article article : articles) {
+            LambdaUpdateWrapper<Article> updateWrapper = new LambdaUpdateWrapper<>();
+            updateWrapper.eq(Article :: getId, article.getId());
+            updateWrapper.set(Article :: getViewCount, article.getViewCount());
+            articleService.update(updateWrapper);
+        }
+
     }
 }

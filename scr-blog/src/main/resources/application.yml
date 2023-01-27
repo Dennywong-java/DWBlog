@@ -15,7 +15,7 @@ spring:
     host: 34.228.73.79
     port: 6379
     password: 3669450H
-    timeout: 1000
+    timeout: 5000
     jedis:
       pool:
         max-active: 8
