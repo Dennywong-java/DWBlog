@@ -1,6 +1,8 @@
 server:
   port: 8989
 spring:
+  main:
+    allow-circular-references: true
   datasource:
     url: jdbc:mysql://dennywong-db1.cldx7doxanmg.us-east-1.rds.amazonaws.com/sg_blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
     username: root
