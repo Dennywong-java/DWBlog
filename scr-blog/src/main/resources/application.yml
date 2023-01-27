@@ -24,6 +24,9 @@ spring:
         max-wait: -1
         max-idle: 8
         min-idle: 0
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 mybatis-plus:
 #  configuration:
 #    # 日志
